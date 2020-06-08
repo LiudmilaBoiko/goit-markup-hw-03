@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 /*заголовки цвет color: #212121;*/
 /*абзацы цвет текста color: #757575;*/
 /*основной акцент color: #2196F3;*/
