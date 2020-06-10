@@ -37,6 +37,8 @@
   padding-left: 15px;
   padding-right: 15px;
   outline: 2px solid red;
+}
+.section {
   margin-bottom: 94px;
 }
 .container.small-margin {
@@ -81,10 +83,18 @@
 .logo-white {
   color: var(--white-color);
 }
-/*.logo-black:hover,
-.logo-black:focus {
+.logo-black:hover,
+.logo-black:focus,
+.logo-white:hover,
+.logo-white:focus,
+.link-in-footer:hover,
+.link-in-footer:focus {
   color: var(--accent-color);
-}*/
+}
+.logo-blue:hover,
+.logo-blue:focus {
+  color: #000000;
+}
 
 /*nav*/
 .site-nav .link {
@@ -180,6 +190,11 @@
   letter-spacing: 0.06em;
   text-decoration: none;
 }
+.button:hover {
+  color: var(--accent-color);
+  background-color: var(--white-color);
+}
+
 /*section*/
 .section-title {
   margin-top: 0;
@@ -243,15 +258,27 @@
 }
 
 /*Стили для Портфолио*/
-.hidden-title {
-  color: var(--white-color);
+/* .hidden-title {
+  color: var(--white-color); */
 }
+
+.filter { 
+  width: 611px;
+  
+}
+
 .filter-list {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  width: 611px;
+  margin-left: 280px;
+  margin-right: 280px;
+  margin-bottom: 34px;
+  outline: 1px solid red;
+
 }
 
 .list-title {
@@ -261,20 +288,42 @@
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 4px;
 }
 .slide-description {
   color: var(--main-text-color);
   font-size: 16px;
   line-height: 1.87;
   text-decoration: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .slide-text {
   color: var(--white-color);
   font-size: 18px;
   line-height: 1.56;
   text-decoration: none;
-  background: grey;
+  background: rgba(33, 150, 243, 0.9);
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 370px;
+  padding: 63px 24px;
 }
 .none {
   text-decoration: none;
+ }
+.button-portfolio {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.16;
+  padding: 6px 22px;
+  min-width: 73px;
+  text-align: center;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--accent-color);
+  color: var(--white-color);
 }
