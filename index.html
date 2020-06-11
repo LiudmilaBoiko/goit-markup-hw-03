@@ -17,20 +17,23 @@
   <body class="page">
     <!--Header-->
     <header>
-      <div class="container">
-        <nav>
-          <a href="./" class="logo">
-            <span class="logo-blue">Web</span>
-            <span class="logo-black">Studio</span></a
-          >
-          <ul class="site-nav list">
-            <li><a href="./index.html" class="link current">Студия</a></li>
-            <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-            <li><a href="" class="link">Контакты</a></li>
-          </ul>
-        </nav>
+      <nav class="container main-nav">
+        <a href="./" class="logo">
+          <span class="logo-blue">Web</span>
+          <span class="logo-black">Studio</span></a
+        >
+        <ul class="site-nav">
+          <li class="item">
+            <a href="./index.html" class="link current">Студия</a>
+          </li>
+          <li class="item">
+            <a href="./portfolio.html" class="link">Портфолио</a>
+          </li>
+          <li class="item"><a href="" class="link">Контакты</a></li>
+        </ul>
+
         <ul class="auth-nav list">
-          <li>
+          <li class="item">
             <a href="mailto:info@devstudio.com" class="link"
               ><img
                 src="./img/envelope.svg"
@@ -38,14 +41,14 @@
               />info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="item">
             <a href="tel:+380961111111" class="link"
               ><img src="./img/smartphone.svg" alt="smartphone" />+3 8096 111 11
               11</a
             >
           </li>
         </ul>
-      </div>
+      </nav>
     </header>
     <main>
       <!--Hero-->
@@ -57,9 +60,9 @@
       <!--Features-->
       <section class="section">
         <div class="container">
-          <h2 class="section-title">Наши особенности</h2>
+          <h2 class="section-title hidden-title">Наши особенности</h2>
           <ul class="features list">
-            <li>
+            <li class="features-item">
               <img src="./img/antenna.svg" alt="Антенна" />
               <h3 class="features-title">Внимание к деталям</h3>
               <p class="text">
@@ -67,7 +70,7 @@
                 формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <img src="./img/clock.svg" alt="Часы" />
               <h3 class="features-title">Пунктуальность</h3>
               <p class="text">
@@ -75,7 +78,7 @@
                 кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <img src="./img/diagram.svg" alt="Диаграмма" />
               <h3 class="features-title">Планирование</h3>
               <p class="text">
@@ -83,7 +86,7 @@
                 степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="features-item">
               <img src="./img/astronaut.svg" alt="Астровнавт" />
               <h3 class="features-title">Современные технологии</h3>
               <p class="text">
@@ -98,16 +101,22 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
-          <ul class="list">
-            <li>
+          <ul class="list projects">
+            <li class="item">
               <a class="none" href="">
-                <img src="./img/desctop-apps.jpg" alt="Ноутбук" width="370" />
+                <img
+                  class="img"
+                  src="./img/desctop-apps.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                />
                 <p class="description">Десктопные приложения</p>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a class="none" href="">
                 <img
+                  class="img"
                   src="./img/mobile-apps.jpg"
                   alt="Мобильный телефон"
                   width="370"
@@ -115,9 +124,14 @@
                 <p class="description">Мобильные приложения</p>
               </a>
             </li>
-            <li>
+            <li class="item">
               <a class="none" href="">
-                <img src="./img/design.jpg" alt="Монитор" width="370" />
+                <img
+                  class="img"
+                  src="./img/design.jpg"
+                  alt="Монитор"
+                  width="370"
+                />
                 <p class="description">Дизайнерские решения</p>
               </a>
             </li>
@@ -128,107 +142,111 @@
       <section class="section sec-bg-color">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
-          <ul class="list">
+          <ul class="list team">
             <!--Николай Кучеренко-->
-            <li>
+            <li class="item">
               <img
+                class="img"
                 src="./img/john-smith.jpg"
                 alt="фото Николая Кучеренко"
                 width="270"
               />
               <h3 class="section-subtitle">Николай Кучеренко</h3>
               <p class="section-text">Product Designer</p>
-              <ul class="list">
-                <li>
+              <ul class="list social-networks">
+                <li class="icons">
                   <a href=""
                     ><img src="./img/instagram.svg" alt="instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/twitter.svg" alt="twitter" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/facebook.svg" alt="facebook" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/linkedin.svg" alt="linkedin" /></a>
                 </li>
               </ul>
             </li>
             <!--Ольга Иванова-->
-            <li>
+            <li class="item">
               <img
+                class="img"
                 src="./img/marta-srewart.jpg"
                 alt="фото Ольги Ивановой"
                 width="270"
               />
               <h3 class="section-subtitle">Ольга Иванова</h3>
               <p class="section-text">Frontend Developer</p>
-              <ul class="list">
-                <li>
+              <ul class="list social-networks">
+                <li class="icons">
                   <a href=""
                     ><img src="./img/instagram.svg" alt="instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/twitter.svg" alt="twitter" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/facebook.svg" alt="facebook" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/linkedin.svg" alt="linkedin" /></a>
                 </li>
               </ul>
             </li>
             <!--Андрей Шевченко-->
-            <li>
+            <li class="item">
               <img
+                class="img"
                 src="./img/robert-jakis.jpg"
                 alt="фото Андрея Шевченко"
                 width="270"
               />
               <h3 class="section-subtitle">Андрей Шевченко</h3>
               <p class="section-text">Marketing</p>
-              <ul class="list">
-                <li>
+              <ul class="list social-networks">
+                <li class="icons">
                   <a href=""
                     ><img src="./img/instagram.svg" alt="instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/twitter.svg" alt="twitter" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/facebook.svg" alt="facebook" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/linkedin.svg" alt="linkedin" /></a>
                 </li>
               </ul>
             </li>
             <!--Иван Николаев-->
-            <li>
+            <li class="item">
               <img
+                class="img"
                 src="./img/martin-doe.jpg"
                 alt="фото Ивана Николаева"
                 width="270"
               />
               <h3 class="section-subtitle">Иван Николаев</h3>
               <p class="section-text">UI Designer</p>
-              <ul class="list">
-                <li>
+              <ul class="list social-networks">
+                <li class="icons">
                   <a href=""
                     ><img src="./img/instagram.svg" alt="instagram"
                   /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/twitter.svg" alt="twitter" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/facebook.svg" alt="facebook" /></a>
                 </li>
-                <li>
+                <li class="icons">
                   <a href=""><img src="./img/linkedin.svg" alt="linkedin" /></a>
                 </li>
               </ul>
@@ -240,23 +258,23 @@
       <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
-          <ul class="list">
-            <li>
+          <ul class="list clients">
+            <li class="item">
               <a href="">
                 <img src="./img/client1.svg" alt="Логотип компании Ya&Co" />
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/client2.svg" alt="Логотип компании" />
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/client3.svg" alt="Логотип компании" />
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img
                   src="./img/client4.svg"
@@ -264,12 +282,12 @@
                 />
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/client5.svg" alt="Логотип компании Brand" />
               </a>
             </li>
-            <li>
+            <li class="item">
               <a href="">
                 <img src="./img/client6.svg" alt="Company Tag Line Logo" />
               </a>
