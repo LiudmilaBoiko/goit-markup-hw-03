@@ -375,6 +375,10 @@ border: 1px solid rgba(255, 255, 255, 0.3);
   height: 44px;
   border-radius: 50%;
 }
+.icons:hover,
+.icons:focus {
+  background-color: var(--accent-color);
+}
 .social-networks {
   display: flex;
   justify-content: center;
