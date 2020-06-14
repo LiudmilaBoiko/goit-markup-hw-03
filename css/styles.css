@@ -47,6 +47,7 @@
 .section {
   padding-bottom: 94px;
   padding-top: 94px;
+ 
 }
 
 .page {
@@ -166,9 +167,9 @@
 }
 
 /*footer*/
-.container.small-margin {
+.container.small-footer {
   display: flex;
-  margin-bottom: 18px;
+  
 }
 .footer-logo {
   padding-top: 45px;
@@ -222,15 +223,17 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .sub-field {
   display: flex;
   }
-.footer-footer {
+.copyright {
   margin-top: 0;
   margin-bottom: 0;
   padding-bottom: 21px;
+  padding-top: 18px;
 
   color: var(--footer-footer-color);
   font-size: 12px;
   line-height: 2;
   text-align: center;
+  border-top:  1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* img */
