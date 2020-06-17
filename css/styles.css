@@ -167,21 +167,23 @@
 }
 
 /*footer*/
-.container.small-footer {
+.container.footer-content {
   display: flex;
+  align-items: baseline;
+  padding-top: 45px;
   
 }
 .footer-logo {
-  padding-top: 45px;
+ padding-top: 0;
   padding-bottom: 8px;
 }
 .join {
   margin-left: 69px;
-  margin-top: 57px;
+ 
 }
 .subscription{
   margin-left: auto;
-  margin-top: 57px;
+  
 }
 .footer {
   background-color: var(--footer-background);
